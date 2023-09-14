@@ -1,3 +1,4 @@
+#https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/C
 n=int(input())
 num=list(map(int,input().split()))
 e=0

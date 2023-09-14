@@ -2,7 +2,11 @@
 
 a,b,c,d=map(int,input().split())
 mul=a*b*c*d
-print(mul%100)
+dig1=mul%10
+mul=mul//10
+dig2=mul%10
+s=str(dig2)+str(dig1)
+print(s)
 
 '''
 sample input1:

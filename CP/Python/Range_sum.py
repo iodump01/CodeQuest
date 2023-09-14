@@ -3,10 +3,12 @@
 t=int(input())
 for i in range(t):
     l,r=map(int,input().split())
-    sum=0
-    for i in range(l,r+1):
-        sum+=i
-    print(sum)
+    if r>l:
+        sumation=(r*(r+1)//2)-(l*(l+1)//2)
+        print(sumation+l)
+    else:
+        sumation=(l*(l+1)//2)-(r*(r+1)//2)
+        print(sumation+r)
 
 '''
 sample input:

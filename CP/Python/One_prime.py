@@ -1,14 +1,15 @@
 #https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/H
 
 x=int(input())
-if x==1 :
-    print("No")
-elif x==2 or x==3 or x==5 or x==7:
-    print("Yes")
-elif x%2==0 or x%3==0 or x%5==0 or x%7==0:
-    print("No")
+count=0
+for i in range(2,x):
+    if x%i==0:
+        count+=1
+        break
+if count==0:
+    print("YES")
 else:
-    print("Yes") 
+    print("NO") 
 
 '''
 sample input1:

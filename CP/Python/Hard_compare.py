@@ -1,10 +1,11 @@
 #https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/Z
 
+import math
 a,b,c,d=map(int,input().split())
-if a**b > c**d:
-    print("Yes")
+if b*math.log(a)>d*math.log(c):
+    print("YES")
 else:
-    print("No")
+    print("NO")
 
 '''
 sample input1:
